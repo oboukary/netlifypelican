@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <title>Data science - data science</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">Data science</a></h1>
+                <nav><ul>
+                    <li><a href="/category/manipulation-de-donnee.html">Manipulation de donnée</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                </ul>
+                </nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="/pandas-data-science.html">Analyse de donnée dans python avec pandas</a></h1>
+<footer class="post-info">
+        <span>sam. 29 février 2020</span>
+<span>| tags: <a href="/tag/pandas.html">pandas</a><a href="/tag/python.html">python</a><a href="/tag/data-science.html">data science</a></span>
+</footer><!-- /.post-info --><h2>La bibliothèque pandas</h2>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">random</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;employees.csv&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+
+<div class="highlight"><pre><span></span><code><span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</code></pre></div>
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>First Name</th>
+      <th>Gender</th>
+      <th>Start Date</th>
+      <th>Last Login Time</th>
+      <th>Salary</th>
+      <th>Bonus %</th>
+      <th>Senior Management</th>
+      <th>Team</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Douglas</td>
+      <td>Male</td>
+      <td>8/6/1993</td>
+      <td>12:42 PM</td>
+      <td>97308</td>
+      <td>6.945</td>
+      <td>True</td>
+      <td>Marketing</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Thomas</td>
+      <td>Male</td>
+      <td>3/31/1996</td>
+      <td>6:53 AM</td>
+      <td>61933</td>
+      <td>4.170</td>
+      <td>True</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Maria</td>
+      <td>Female</td>
+      <td>4/23/1993</td>
+      <td>11:17 AM</td>
+      <td>130590</td>
+      <td>11.858</td>
+      <td>False</td>
+      <td>Finance</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Jerry</td>
+      <td>Male</td>
+      <td>3/4/2005</td>
+      <td>1:00 PM</td>
+      <td>138705</td>
+      <td>9.340</td>
+      <td>True</td>
+      <td>Finance</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Larry</td>
+      <td>Male</td>
+      <td>1/24/1998</td>
+      <td>4:47 PM</td>
+      <td>101004</td>
+      <td>1.389</td>
+      <td>True</td>
+      <td>Client Services</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="highlight"><pre><span></span><code><span class="n">test</span><span class="o">=</span><span class="n">data</span><span class="o">.</span><span class="n">columns</span>
+</code></pre></div>
+
+
+<div class="highlight"><pre><span></span><code><span class="n">test</span>
+</code></pre></div>
+
+
+<div class="highlight"><pre><span></span><code><span class="err">Index([&#39;First Name&#39;, &#39;Gender&#39;, &#39;Start Date&#39;, &#39;Last Login Time&#39;, &#39;Salary&#39;,</span>
+<span class="err">       &#39;Bonus %&#39;, &#39;Senior Management&#39;, &#39;Team&#39;],</span>
+<span class="err">      dtype=&#39;object&#39;)</span>
+</code></pre></div>
+
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>                </article>
+<p class="paginator">
+    Page 1 / 1
+</p>
+            </aside><!-- /#featured -->
+            </ol><!-- /#posts-list -->
+            </section><!-- /#content -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>blogroll</h2>
+                        <ul>
+                            <li><a href="http://getpelican.com/">Pelican</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <p>Powered by <a href="http://getpelican.com/">Pelican</a>. Theme <a href="https://github.com/blueicefield/pelican-blueidea/">blueidea</a>, inspired by the default theme.</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
